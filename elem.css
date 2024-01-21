@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    background: blue;
+}
+
+/* Navigation bar start */
+
+nav{
+    background: #0082e5;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Navigation bar end*/
+
+/* Home page start*/
+
+section{
+    height: 500px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div{
+    width: 300px;
+    height: 350px;
+    background: white;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.uniform img{
+    width: 250px;
+    height: 300px;
+    bakground-position: center;
+}
+
+.pe img{
+    width: 250px;
+    height: 300px;
+    bakground-position: center;
+}
+
+.uniform{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.pe{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.uniform:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+
+.pe:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+
+
+.unif div{
+    width: 280px;
+    height: 350px;
+    background: white;
+}
+
+.elem{
+    transition: .3s;
+}
+
+.jhs{
+    transition: .3s;
+}
+
+.shs{
+    transition: .3s;
+}
+
+.shs1{
+    transition: .3s;
+}
+
+.elem img{
+    width: 250px;
+    height: 300px;
+    bakground-position: center;
+}
+
+.jhs img{
+    width: 250px;
+    height: 300px;
+    bakground-position: center;
+}
+
+.shs img{
+    width: 250px;
+    height: 300px;
+    bakground-position: center;
+}
+
+.shs1 img{
+    width: 250px;
+    height: 300px;
+    bakground-position: center;
+}
+
+.elem:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+.jhs:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+.shs:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+.shs1:hover{
+    transform: translateY(-10px);
+    color: blue;
+}
+
+
+/* Media query*/
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    label.logo{
+        font-size: 20px;
+        text-align: center;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 50px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
